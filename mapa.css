@@ -1,0 +1,15 @@
+#map {
+    height: 90vh;
+    width: 100hw;    
+}
+
+h1 {
+    color: darkgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+select {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
