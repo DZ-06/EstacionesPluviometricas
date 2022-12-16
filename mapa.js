@@ -9,3 +9,12 @@ document.getElementById('select-location').addEventListener('change',function(e)
     let coords = e.target.value.split(",");
     map.flyTo(coords,18)
 })
+
+var carto_light=L.titleLayer('https://%7Bs%7D.basemaps.cartocdn.com/rastertiles/light_all/%7Bz%7D/%7Bx%7D/%7By%7D.png', {attribution: '©OpenStreetMap, ©CartoDB',subdomains: 'abcd',maxZoom: 24})
+
+var minimap=new L.Control.minimap(carto_light,
+    {
+        toogleDisplay: true,
+        minimized:false,
+        position: "bottomleft"
+    }).addTo(map);
