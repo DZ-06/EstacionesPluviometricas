@@ -19,3 +19,6 @@ var minimap = new L.Control.MiniMap(carto_light,
         minimized: false,
         position: "bottomleft"
     }).addTo(map);
+
+// Agregar escala
+new L.control.scale({imperial: false}).addTo(map);
