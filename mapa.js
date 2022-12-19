@@ -10,6 +10,17 @@ document.getElementById('select-location').addEventListener('change',function(e)
     map.flyTo(coords,18)
 });
 
+//marcador
+L.marker([-16.41350,-71.53438]).addTo(map).bindPopup(`
+    <h5>La Pampilla</h5>
+    <p>PP=0.0</p>
+`);
+L.marker([-16.488200,-71.333800]).addTo(map).bindPopup(`
+    <h5>Tuctumpaya</h5>
+    <p>PP=0.0</p>
+`);
+
+
 var carto_light = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {attribution: '©OpenStreetMap, ©CartoDB',subdomains: 'abcd',maxZoom: 24});
 
 // Agregar plugin MiniMap
